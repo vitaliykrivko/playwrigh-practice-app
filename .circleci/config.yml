@@ -6,36 +6,19 @@ jobs:
       - image: cimg/node:20.8.1
 
     environment:
-      MAIN_REPO_URL: "https://github.com/bilaldjedovic/playwrigh-practice-app.git"
       TEST_REPO_URL: "https://github.com/bilaldjedovic/pw-ui-test.git"
 
     steps:
       - checkout
 
       - run:
-          name: Checkout Main Repository
-          command: git clone $MAIN_REPO_URL
-
-      - run:
           name: Checkout Test Repository
           command: git clone $TEST_REPO_URL
 
       - run:
-          name: Install Dependencies for Main Repository
-          command: |
-            cd playwrigh-practice-app
-            npm install --force
-
-      - run:
-          name: Start Main Repository
-          command: |
-            cd playwrigh-practice-app # Adjust the directory based on your project structure
-            npm start -- --host 0.0.0.0 &
-            sleep 200
-      - run:
           name: Install Dependencies for Test Repository
           command: |
-            cd pw-ui-test 
+            cd pw-ui-test
             npm install
             npx playwright install chromium
             sudo npx playwright install-deps
