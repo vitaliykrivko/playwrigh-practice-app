@@ -31,7 +31,7 @@ jobs:
           command: |
             cd playwrigh-practice-app # Adjust the directory based on your project structure
             npm start -- --host 0.0.0.0 &
-            sleep 100
+            sleep 200
       - run:
           name: Install Dependencies for Test Repository
           command: |
