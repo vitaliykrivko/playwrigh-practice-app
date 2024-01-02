@@ -44,7 +44,7 @@ jobs:
           name: Run Regression Tests
           command: |
             cd pw-ui-test
-            npx playwright test -project="chromium"
+            npx playwright test --project=chromium
 
 workflows:
   version: 2
