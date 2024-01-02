@@ -23,19 +23,19 @@ jobs:
       - run:
           name: Install Dependencies for Main Repository
           command: |
-            cd pw-practice-app
+            cd playwrigh-practice-app
             npm install --force
 
       - run:
           name: Start Main Repository
           command: |
-            cd pw-practice-app # Adjust the directory based on your project structure
+            cd playwrigh-practice-app # Adjust the directory based on your project structure
             npm start &
             sleep 50
       - run:
           name: Install Dependencies for Test Repository
           command: |
-            cd pw-ui-test-app 
+            cd pw-ui-test 
             npm install
             npx playwright install chromium
             sudo npx playwright install-deps
@@ -43,7 +43,7 @@ jobs:
       - run:
           name: Run Regression Tests
           command: |
-            cd pw-ui-test-app  
+            cd pw-ui-test
             npx playwright test 
 
 workflows:
