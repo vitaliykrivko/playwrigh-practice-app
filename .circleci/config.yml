@@ -30,7 +30,7 @@ jobs:
           name: Start Main Repository
           command: |
             cd playwrigh-practice-app # Adjust the directory based on your project structure
-            npm start &
+            npm start -- --host 0.0.0.0 &
             sleep 160
       - run:
           name: Install Dependencies for Test Repository
@@ -44,7 +44,7 @@ jobs:
           name: Run Regression Tests
           command: |
             cd pw-ui-test
-            npx playwright test 
+            npx playwright test -project="chromium"
 
 workflows:
   version: 2
