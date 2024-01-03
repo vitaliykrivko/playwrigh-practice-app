@@ -9,8 +9,6 @@ jobs:
       TEST_REPO_URL: "https://github.com/bilaldjedovic/pw-ui-test.git"
 
     steps:
-      - checkout
-
       - run:
           name: Clone Test Repository
           command: git clone $TEST_REPO_URL
