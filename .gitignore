@@ -2,6 +2,8 @@
 /dist
 /tmp
 /out-tsc
+.auth/
+.env
 
 # dependencies
 /node_modules
@@ -40,3 +42,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

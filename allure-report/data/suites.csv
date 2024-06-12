@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Thu Jun 06 23:40:22 EEST 2024","Thu Jun 06 23:40:26 EEST 2024","4119","chromium","pageObject\usePageObject.spec.ts","","","","navigate to Form page",""
+"passed","Thu Jun 06 23:47:05 EEST 2024","Thu Jun 06 23:47:12 EEST 2024","7010","chromium","api\api-test.spec.ts","test api","","","create article",""
+"passed","Thu Jun 06 23:41:05 EEST 2024","Thu Jun 06 23:41:10 EEST 2024","4517","chromium","api\api-test.spec.ts","test api","","","has title",""
